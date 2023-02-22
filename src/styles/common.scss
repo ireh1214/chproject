@@ -1,0 +1,145 @@
+.layout_wrap {
+  width: 100%;
+  max-width: 500px;
+  min-width: 280px;
+
+  margin: 0 auto;
+
+  header {
+    height: 48px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.plus_btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #000;
+
+  a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.index_container {
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0px 14px;
+
+    &::before {
+      content: '- ';
+    }
+  }
+}
+
+.conti_wrap {
+  .conti_inner {
+    padding: 10px;
+    font-size: 15px;
+
+    div {
+      margin: 12px 8px;
+    }
+
+    .conti_1 {
+      &::before {
+        content: '1번 곡: ';
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .conti_2 {
+      &::before {
+        content: '2번 곡: ';
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .conti_3 {
+      &::before {
+        content: '3번 곡: ';
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .conti_4 {
+      &::before {
+        content: '4번 곡: ';
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .sub_inner {
+      padding: 10px;
+      background-color: #fafafa;
+      display: none;
+
+      p {
+        padding: 4px;
+        color: #777;
+        line-height: 1.5;
+      }
+
+      .code {
+        &::before {
+          content: 'Code: ';
+          color: #333;
+          font-weight: 600;
+        }
+      }
+
+      .head {
+        &::before {
+          content: '담당자: ';
+          color: #333;
+          font-weight: 600;
+        }
+      }
+
+      .reference {
+        &::before {
+          content: '참고영상: ';
+          color: #333;
+          font-weight: 600;
+        }
+      }
+
+      .conti {
+        &::before {
+          content: '세부콘티: ';
+          color: #333;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+}
+
+@media only screen and (min-width: 800px) {
+}
