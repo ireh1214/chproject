@@ -2,8 +2,14 @@
   width: 100%;
   max-width: 500px;
   min-width: 280px;
-
+  padding: 0px 10px;
   margin: 0 auto;
+
+  ul {
+    li {
+      text-align: center;
+    }
+  }
 
   header {
     height: 48px;
